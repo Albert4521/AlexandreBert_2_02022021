@@ -13,8 +13,6 @@
             <div id="Logo">
                 <img src="Images/Reservia.png" alt="Logo Réservia">
             </div>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
             <nav id="MenuPrincipal">
                 <ul>
                     <li><a href="#Hebergements">Hébergements</a></li>
@@ -22,14 +20,21 @@
                     <li><a href="#">S'inscrire</a></li>
                 </ul>
             </nav>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
         </header>
         <section id="Recherche">
             <form action="GET" id="Formulaire">
                 <fieldset id="RechercheVille">
-                    <input type="text" id="Lieu" name="Lieu" placeholder="Marseille, France">
-                    <label for="Lieu"></label>
+                    <div class="CapsuleRecherche">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="Lieu" name="Lieu" placeholder="Marseille, France">
+                        <label for="Lieu"></label>
+                    <input type="submit" value="Rechercher">
+                    </div>
                 </fieldset>
-                <fieldset id="Filtres">
+                <fieldset id="FiltresRecherche">
+                    <label for="#">Filtres</label>
                     <input type="checkbox" id="Economique" name="Filtres">
                     <i class="fas fa-money-bill-wave-alt"></i>
                     <label for="Economique">Economique</label>
