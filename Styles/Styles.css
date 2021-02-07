@@ -187,42 +187,68 @@ header p{
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 1.5em;
+    height: 1.8em;
     width: auto;
+    margin-right: 0.4em;
     border: solid black 1px;
-    border-radius: 0.6em;
+    border-radius: 0.9em;
 }
         /*Cases à cocher Checkbox*/
-#Filtres input[type="checkbox"]{
+#FiltresRecherche input[type="checkbox"]{
     display: none;
 }
-        /*Icônes SVG FontAwesome pour les filtres*/
-#Filtres i{
-    display: inline-block;
-    width: 1.4em;
-    height: 1.2em;
-    margin: 0.2em;
+        /*Icônes pour les filtres*/
+            /*Capsule contenant l'icone*/
+.capsuleIcone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
-    fill:#deebff;
-    font-size: 1em;
+    width: 1.8em ;
+    height: 1.8em;
+    background-color: #deebff;
+    padding: 0.3em 0.3em;
+    border-radius: 0.9em;
+}
+            /*Icône FontAwesome*/
+#FiltresRecherche i{
+    background-color: #deebff;
+    font-size: 0.9em;
     color: #0065fc;
-    text-align: center;
 }
         /*Etiquettes Filtres*/
-#Filtres label{
+#FiltresRecherche label{
     display: inline-block;
     position: relative;
-    height: 1.2em;
+    height: 1.8em;
     width: auto;
     margin: 0.2em;
+    padding: 0.3em;
     box-sizing: border-box;
     margin-right:1em;
+    font-size: 0.8em;
     font-weight: bold;
 }
     /*Paragraphe indiquant le nombre de logements trouvés dans la ville recherchée*/
 #ResultatEffectif{
-    font-size: 0.85rem;;
+    font-size: 0.75rem;;
 }
+#ResultatEffectif i{
+    display: inline-block;
+    font-size: 0.6rem;;
+    box-sizing: border-box;
+    padding: 0.2rem 0.5rem;
+    color: #0065fc;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+}
+#ResultatEffectif p{
+    display: inline-block;
+    margin-left: 0.5rem;
+    color: black;
+}
+
+/*DIV HEBERGEMENTS*/
 
 /*Notes Infos
 Couleurs Charte Graphique :

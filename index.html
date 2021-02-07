@@ -35,114 +35,97 @@
                 </fieldset>
                 <fieldset id="FiltresRecherche">
                     <label for="#">Filtres</label>
-                    <input type="checkbox" id="Economique" name="Filtres">
-                    <i class="fas fa-money-bill-wave-alt"></i>
-                    <label for="Economique">Economique</label>
-                    <input type="checkbox" id="Familial" name="Filtres">
-                    <i class="fas fa-child"></i>
-                    <label for="Familial">Familial</label>
-                    <input type="checkbox" id="Romantique" name="Filtres">
-                    <i class="fas fa-heart"></i>
-                    <label for="Romantique">Romantique</label>
+                    <div class="Filtre">
+                        <input type="checkbox" id="Economique" name="Filtres">
+                        <div class="capsuleIcone">
+                            <i class="fas fa-money-bill-wave-alt"></i>
+                        </div>
+                        <label for="Economique">Economique</label>
+                    </div>
+                    <div class="Filtre">
+                        <input type="checkbox" id="Familial" name="Filtres">
+                        <div class="capsuleIcone">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <label for="Familial">Familial</label>
+                    </div>
+                    <div class="Filtre">
+                        <input type="checkbox" id="Romantique" name="Filtres">
+                        <div class="capsuleIcone">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <label for="Romantique">Romantique</label>
+                    </div>
                     <div class="Filtre">
                         <input type="checkbox" id="AnimauxAutorises" name="Filtres">
-                        <i class="fas fa-dog"></i>
+                        <div class="capsuleIcone">
+                            <i class="fas fa-dog"></i>
+                        </div>
                         <label for="AnimauxAutorises">Animaux autorisés</label>
                     </div>
                 </fieldset>
             </form>
-            <p id="ResultatEffectif">Plus de 500 logements dans cette ville</p>
-        </section>
-        <section id="Hebergements">
-            <h2>Hébergements à Marseille</h2>
-            <div id="CartesHebergements">
-                <a id="CarteH1" href="Images/Hebergements/Auberge_La_Cannebière.jpg" target="_blank">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption>
-                            Auberge la Cannebière <br> Nuit à partir de 25€
-                        </figcaption>
-                        <div class="Etoiles4"></div>
-                    </figure>
-                </a>
-                <a id="CarteH2" href="Images/Hebergements/Hotel_Du_Port.jpg" target="_blank">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption>
-                            Hôtel du port <br> Nuit à partir de 52€
-                        </figcaption>
-                        <div class="Etoiles5"></div>
-                    </figure>
-                </a>
-                <a id="CarteH3" href="Images/Hebergements/Hotel_Les_Mouettes.jpg" target="_blank">
-                    <figure >
-                        <img src="" alt="">
-                        <figcaption>
-                            Hôtel Les Mouettes <br> Nuit à partir de 76€
-                        </figcaption>
-                        <div class="Etoiles3"></div>
-                    </figure>
-                </a>
-                <a id="CarteH4" href="Images/Hebergements/Hotel_De_La_Mer.jpg" target="_blank">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption>
-                            Hôtel de la mer <br> Nuit à partir de 46€
-                        </figcaption>
-                        <div class="Etoiles3"></div>
-                    </figure>
-                </a>
-                <a id="CarteH5" href="Images/Hebergements/Auberge_Le Pannier.jpg" target="_blank">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption>
-                            Auberge Le Panier <br> Nuit à partir de 23€
-                        </figcaption>
-                        <div class="Etoiles4"></div>
-                    </figure>
-                </a>
-                <a id="CarteH6" href="Images/Hebergements/Hôtel_Chez_Amina.jpg" target="_blank">
-                    <figure >
-                        <img src="" alt="">
-                        <figcaption>
-                            Hôtel chez Amina <br> Nuit à partir de 96€
-                        </figcaption>
-                        <div class="Etoiles4"></div>
-                    </figure>
-                </a>        
+            <div id="ResultatEffectif">
+                <i class="fas fa-info"></i>
+                <p>Plus de 500 logements dans cette ville</p>
             </div>
-            <a href="#">Afficher plus</a>
         </section>
-        <section id="Tendances">
-            <h2>Les plus populaires</h2>
-            <a id="carteT1" href="Images/Hebergements/Le_Soleil_Du_Matin.jpg" target="_blank">
-                <figure>
+        <div id="Hebergements">
+            <section id="Classiques">
+                <h2>Hébergements à Marseille</h2>
+                <div id="CartesHebergements">
+                    <a class="carteH" id="CarteH1" href="Images/Hebergements/Auberge_La_Cannebière.jpg" target="_blank">
+                        <img src="" alt="">
+                        <p>Auberge la Cannebière <br> Nuit à partir de 25€</p>
+                        <div class="Etoiles4"></div>
+                    </a>
+                    <a class="carteH" id="CarteH2" href="Images/Hebergements/Hotel_Du_Port.jpg" target="_blank">
+                        <img src="" alt="">
+                        <p>Hôtel du port <br> Nuit à partir de 52€</p>
+                        <div class="Etoiles5"></div>
+                    </a>
+                    <a class="carteH" id="CarteH3" href="Images/Hebergements/Hotel_Les_Mouettes.jpg" target="_blank">
+                        <img src="" alt="">
+                        <p>Hôtel Les Mouettes <br> Nuit à partir de 76€</p>
+                        <div class="Etoiles3"></div>
+                    </a>
+                    <a class="carteH" id="CarteH4" href="Images/Hebergements/Hotel_De_La_Mer.jpg" target="_blank">
+                        <img src="" alt="">
+                        <p>Hôtel de la mer <br> Nuit à partir de 46€</p>
+                        <div class="Etoiles3"></div>
+                    </a>
+                    <a class="carteH" id="CarteH5" href="Images/Hebergements/Auberge_Le Pannier.jpg" target="_blank">
+                        <img src="" alt="">
+                        <p>Auberge Le Panier <br> Nuit à partir de 23€</p>
+                        <div class="Etoiles4"></div>
+                    </a>
+                    <a class="carteH" id="CarteH6" href="Images/Hebergements/Hôtel_Chez_Amina.jpg" target="_blank">
+                        <img src="" alt="">
+                        <p>Hôtel chez Amina <br> Nuit à partir de 96€</p>
+                        <div class="Etoiles4"></div>
+                    </a>        
+                </div>
+                <a href="#">Afficher plus</a>
+            </section>
+            <section id="Tendances">
+                <h2>Les plus populaires</h2>
+                <a id="carteT1" href="Images/Hebergements/Le_Soleil_Du_Matin.jpg" target="_blank">
                     <img src="" alt="">
-                    <figcaption>
-                        Hôtel Le soleil du matin <br> Nuit à partir de 128€
-                    </figcaption>
+                    <p>Hôtel Le soleil du matin <br> Nuit à partir de 128€</p>
                     <div class="Etoiles5"></div>
-                </figure>
-            </a>
-            <a id="carteT2" href="Images/Hebergements/Au_Coeur_De_L_Eau.jpg" target="_blank">
-                <figure>
+                </a>
+                <a id="carteT2" href="Images/Hebergements/Au_Coeur_De_L_Eau.jpg" target="_blank">
                     <img src="" alt="">
-                    <figcaption>
-                        Au coeur de l'eau <br> Chambres d'hôtes <br> Nuit à partir de 71€
-                    </figcaption>
+                    <p>Au coeur de l'eau <br> Chambres d'hôtes <br> Nuit à partir de 71€</p>
                     <div class="Etoiles4"></div>
-                </figure>
-            </a>
-            <a id="carteT3" href="Images/Hebergements/Tout_Bleu_Et_Blanc.jpg" target="_blank">
-                <figure>
+                </a>
+                <a id="carteT3" href="Images/Hebergements/Tout_Bleu_Et_Blanc.jpg" target="_blank">
                     <img src="" alt="">
-                    <figcaption>
-                        Hôtel Tout Bleu et Blanc <br> Nuit à partir de 68€
-                    </figcaption>
+                    <p>Hôtel Tout Bleu et Blanc <br> Nuit à partir de 68€</p>
                     <div class="Etoiles4"></div>
-                </figure>
-            </a>
-        </section>
+                </a>
+            </section>
+        </div>
         <section id="Activites">
             <h2>Activités à Marseille</h2>
             <a id="CarteA1" href="Images/Activités/Vieux_Port.jpg" target="_blank">
