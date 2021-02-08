@@ -4,8 +4,18 @@
     src: url('/Styles/Polices/Raleway-Regular.ttf') format('truetype');
 }
 
-/*Eléments principaux de la page*/
+/*Mise en forme d'ordre général de certains éléments*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.gras{
+    font-weight: bold;
+}
+
+/*ELEMENTS PRINCIPAUX DE LA PAGE*/
 #Bloc_Page{
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -29,17 +39,28 @@ header{
 }
 #Hebergements{
     position: relative;
-}
-#Tendances{
-    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 1rem 0rem;
 }
 #Activites{
     position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-content: stretch;
+    width: 100%;
+    margin: 1rem 0rem;
 }
 footer{
     position: relative;
 }
-/*HEADER : Logo Reservia */
+
+/*HEADER : LOGO RESERVIA */
+
 #Logo{
     flex-grow: 1;
     flex-shrink: 3;
@@ -51,7 +72,9 @@ footer{
     width: 13%;
     height: 100%;
 }
-/*HEADER : Menu de navigation principale*/
+
+/*HEADER : MENU NAVIGATION PRINCIPALE*/
+
 #MenuPincipal{
     flex-grow: 1;
     flex-shrink: 3;
@@ -73,24 +96,24 @@ footer{
 #MenuPrincipal ul li{
     list-style-type: none;
     margin: 1em;
-
 }
 #MenuPrincipal ul li a{
     width: 100%;
     height: 100%;
-    text-decoration: none;
 }
 #MenuPrincipal ul li:nth-child(1){
     color: #0065fc;
-
 }
 #MenuPrincipal ul li:nth-child(2){
     color: gray;
 }
 #MenuPrincipal ul li:nth-child(3){
     font-weight: bold;
+    color: #0065fc;
 }
-/*HEADER : Titre principal de la page*/
+
+/*HEADER : TITRE PRINCIPAL*/
+
 h1{
     position: relative;
     flex-grow: 1;
@@ -100,13 +123,17 @@ h1{
     font-size: 1.15rem;
     word-spacing: -0.1rem;
 }
-/*HEADER : Paragraphe du Header*/
-header p{
+
+/*HEADER : TITRE SECONDAIRE*/
+
+header h2{
     font-size: 0.85rem;
     margin-top: 0rem;
     margin-bottom: 0.5rem;
+    font-weight: normal;
 }
-/*SECTION RECHERCHE : Formulaire*/
+
+/*SECTION RECHERCHE : FORMULAIRE*/
 
 #Formulaire fieldset{
     position: relative;
@@ -117,138 +144,309 @@ header p{
     margin-left: 0rem;
     padding-left: 0rem;;
 }
-    /****** CHAMP DE RECHERCHE VILLE ******/
+    /*FORMULAIRE : Champ de recherche Ville*/
 
-#RechercheVille{
-    margin-bottom: 0.5rem;
-}
-    /*Création d'un div pour encapsuler l'ICONE, la ZONE DE SAISIE texte et le BOUTON d'envoi des données*/
-.CapsuleRecherche{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 1.75rem;
-    width: auto;
-    border: solid #999 1px;
-    border-radius: 0.4rem;
-    background-color: #999;
-}
+    #RechercheVille{
+        margin-bottom: 0.5rem;
+    }
+        /*Création d'un div pour encapsuler l'ICONE, la ZONE DE SAISIE texte et le BOUTON d'envoi des données*/
+        .CapsuleRecherche{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 1.75rem;
+            width: auto;
+            border: solid #999 1px;
+            border-radius: 0.4rem;
+            background-color: #999;
+        }
         /* 1°) ICONE Géolocalisation*/
-.CapsuleRecherche i{
-    position: relative;
-    height: 1.75rem;
-    width: 100%;
-    margin: 0.6rem;
-    padding-top: 0.6rem;
-    color: black;
-}
+        .CapsuleRecherche i{
+            position: relative;
+            height: 1.75rem;
+            width: 100%;
+            margin: 0.6rem;
+            padding-top: 0.6rem;
+            color: black;
+        }
         /* 2°) ZONE DE SAISIE pour la ville recherchée*/
-#RechercheVille input[type="text"]{
-    position: relative;
-    top: -0.05rem;
-    width: 100%;
-    height: 1.7rem;
-    padding: 0rem 0.2rem 0rem 0.2rem;
-    margin-right:0rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    border: solid #555 1px;
-    color: black;
-}
-#RechercheVille input[type="text"]:focus{
-    box-shadow: 0;
-    height: 1.7rem;
-}
+        #RechercheVille input[type="text"]{
+            position: relative;
+            top: -0.05rem;
+            width: 100%;
+            height: 1.7rem;
+            padding: 0rem 0.2rem 0rem 0.2rem;
+            margin-right:0rem;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+            border: solid #555 1px;
+            color: black;
+        }
+        #RechercheVille input[type="text"]:focus{
+            box-shadow: 0;
+            height: 1.7rem;
+        }
         /* 3°) BOUTON d'envoi du formulaire*/
-#RechercheVille input[type="submit"]{
-    position: relative;
-    width: 100%;
-    height: 1.7rem;
-    background-color: #0065fc;
-    color: white;
-    padding-bottom: 0.2rem;
-    margin-left: 0rem;
-    border: 0px;
-    border-top-right-radius: 0.4rem;
-    border-top-right-radius: 0.4rem;
-}
-    /****** CHAMP DES FILTRES DE RECHERCHE ******/
+        #RechercheVille input[type="submit"]{
+            position: relative;
+            width: 100%;
+            height: 1.7rem;
+            background-color: #0065fc;
+            color: white;
+            padding-bottom: 0.2rem;
+            margin-left: 0rem;
+            border: 0px;
+            border-top-right-radius: 0.4rem;
+            border-top-right-radius: 0.4rem;
+        }
+    /*FORMULAIRE : Filtres de recherche*/
 
-#FiltresRecherche{
-    margin-top: 0rem;
-    margin-bottom: 0.2rem;
-    font-weight: bold;
-}
-
+    #FiltresRecherche{
+        margin-top: 0rem;
+        margin-bottom: 0.2rem;
+        font-weight: bold;
+    }
         /*Classe générique pour mise en forme des filtres de recherche*/
-.Filtre{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 1.8em;
-    width: auto;
-    margin-right: 0.4em;
-    border: solid black 1px;
-    border-radius: 0.9em;
-}
+        .Filtre{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 1.8em;
+        width: auto;
+        margin-right: 0.4em;
+        border: solid black 1px;
+        border-radius: 0.9em;
+        }
         /*Cases à cocher Checkbox*/
-#FiltresRecherche input[type="checkbox"]{
-    display: none;
-}
-        /*Icônes pour les filtres*/
-            /*Capsule contenant l'icone*/
-.capsuleIcone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 1.8em ;
-    height: 1.8em;
-    background-color: #deebff;
-    padding: 0.3em 0.3em;
-    border-radius: 0.9em;
-}
+        #FiltresRecherche input[type="checkbox"]{
+        display: none;
+        }
+        /*Capsule contenant l'icone*/
+        .capsuleIcone{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            width: 1.8em ;
+            height: 1.8em;
+            background-color: #deebff;
+            padding: 0.3em 0.3em;
+            border-radius: 0.9em;
+        }
             /*Icône FontAwesome*/
-#FiltresRecherche i{
-    background-color: #deebff;
-    font-size: 0.9em;
-    color: #0065fc;
-}
+            #FiltresRecherche i{
+                background-color: #deebff;
+                font-size: 0.9em;
+                color: #0065fc;
+            }
         /*Etiquettes Filtres*/
-#FiltresRecherche label{
-    display: inline-block;
-    position: relative;
-    height: 1.8em;
-    width: auto;
-    margin: 0.2em;
-    padding: 0.3em;
-    box-sizing: border-box;
-    margin-right:1em;
-    font-size: 0.8em;
-    font-weight: bold;
-}
-    /*Paragraphe indiquant le nombre de logements trouvés dans la ville recherchée*/
+        #FiltresRecherche label{
+        display: inline-block;
+        position: relative;
+        height: 1.8em;
+        width: auto;
+        margin: 0.2em;
+        padding: 0.3em;
+        box-sizing: border-box;
+        margin-right:1em;
+        font-size: 0.8em;
+        font-weight: bold;
+        }
+/*SECTION RECHERCHE : FORMULAIRE*/
 #ResultatEffectif{
     font-size: 0.75rem;;
 }
-#ResultatEffectif i{
-    display: inline-block;
-    font-size: 0.6rem;;
-    box-sizing: border-box;
-    padding: 0.2rem 0.5rem;
-    color: #0065fc;
-    border: 1px solid #f2f2f2;
-    border-radius: 50%;
+    #ResultatEffectif i{
+        display: inline-block;
+        font-size: 0.6rem;;
+        box-sizing: border-box;
+        padding: 0.2rem 0.5rem;
+        color: #0065fc;
+        border: 1px solid #f2f2f2;
+        border-radius: 50%;
+    }
+    #ResultatEffectif p{
+        display: inline-block;
+        margin-left: 0.5rem;
+        color: black;
+    }
+
+/*HEBERGEMENTS : Section 'Classiques'*/
+
+#Classiques{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    width: 65%;
+    background-color: #e9e9e9;
+    border-radius: 0.8rem;
 }
-#ResultatEffectif p{
-    display: inline-block;
-    margin-left: 0.5rem;
-    color: black;
+    /*SECTION Classiques : Titre de section*/
+    #Classiques h2{
+        position: relative;
+        width: 90%;
+        margin-left: 3%;
+    }
+    /*SECTION Classiques : div '#CartesHebergements' regroupant les cartes Hébergements*/
+    #CartesHebergements{
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-content: space-around;
+        height: 26rem;
+        width: 100%;
+    }
+        /*DIV 'CartesHebergements' : div '.CarteH' pour mettre en forme une carte hébergement*/
+        .carteH{
+            position: relative;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 30%;
+            height: 46%;
+            border-radius: 0.8rem;
+            padding: auto;
+            background-color: #fff;
+            font-size: 0.9rem;
+        }
+            /*DIV 'CarteH' : Image Logement*/
+            .carteH img{
+                position: relative;
+                width: 95%;
+                height: 59%;
+                margin: auto;
+                border-top-left-radius: 0.6rem;
+                border-top-right-radius: 0.6rem;
+            }
+            /*DIV 'CarteH': Nom & Pix Logement*/
+            .carteH p{
+                position: relative;
+                width: 90%;
+                height: 15%;
+                margin: auto;
+            }
+            /*DIV 'CarteH': Notation Logement*/
+            .carteH div{
+                position: relative;
+                width: 90%;
+                height: 15%;
+                margin: auto;
+            }
+    /*SECTION Classiques : Lien "Afficher plus" de logements*/
+    #Classiques>a{
+        position: relative;    
+        width: 90%;
+        height: 0.8rem;
+        margin: 3%;
+    }
+
+/*HEBERGEMENTS : Section 'Tendances' = Les plus populaires*/
+
+#Tendances{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    height: 35rem;
+    background-color: #e9e9e9;
+    border-radius: 0.8rem;
+}
+    /*SECTION 'Tendances' : Titre de section*/
+    #Tendances h2{
+        position: relative;
+        width: 90%;
+        margin-left: 3%;
+    }
+
+    /*SECTION Tendances : Mise en forme d'une carte tendance 'carteT'*/
+    .carteT{
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        height: 25%;
+        padding: auto;
+        background-color: #fff;
+    }
+
+        /*DIV 'carteT' : Image Logement*/
+        .carteT img{
+            position: relative;
+            width: 95%;
+            height: 50%;
+            margin: auto;
+            border-top-left-radius: 0.6rem;
+            border-top-right-radius: 0.6rem;
+        }
+        /*DIV 'carteT': Nom & Pix Logement*/
+        .carteT p{
+            position: relative;
+            width: 90%;
+            height: 15%;
+            margin: auto;
+        }
+        /*DIV 'CarteT': Notation Logement*/
+        .carteT div{
+            position: relative;
+            width: 90%;
+            height: 15%;
+            margin: auto;
+        }
+
+
+
+/*SECTION 'Activites' : div '#CartesActivites' regroupant les cartes Activites*/
+
+#CartesActivites{
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    width: 100%;
+    height: 10rem;
+}
+/*SECTION 'Activites' : div'.CarteA' pour mettre en forme une carte Activité'*/
+
+.CarteA{
+    position: relative;
+    vertical-align: bottom;
+    width: 25%;
+}
+/*Dimensionnement des cartes Activité*/
+#CarteA1{
+    position: relative;
+    height: 100%;
+}
+#CarteA2{
+    position: relative;
+    height: 50%;
+}
+#CarteA3{
+    position: relative;
+    height: 50%;
+}
+#CarteA4{
+    position: relative;
+    height: 100%;
+}
+#CarteA5{
+    position: relative;
+    height: 50%;
+}
+#CarteA6{
+    position: relative;
+    height: 50%;
 }
 
-/*DIV HEBERGEMENTS*/
 
 /*Notes Infos
 Couleurs Charte Graphique :
