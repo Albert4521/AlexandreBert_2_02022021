@@ -57,6 +57,7 @@ header{
 }
 footer{
     position: relative;
+    margin: 2rem 0rem;
 }
 
 /*HEADER : LOGO RESERVIA */
@@ -85,36 +86,36 @@ footer{
     position: relative;
     width: 50%;
 }
-#MenuPrincipal ul{
-    position: relative;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    width: 100%;
-    height: 100%;
-}
-#MenuPrincipal ul li{
-    list-style-type: none;
-    margin: 1em;
-}
-#MenuPrincipal ul li a{
-    width: 100%;
-    height: 100%;
-}
-#MenuPrincipal ul li:nth-child(1){
-    color: #0065fc;
-}
-#MenuPrincipal ul li:nth-child(2){
-    color: gray;
-}
-#MenuPrincipal ul li:nth-child(3){
-    font-weight: bold;
-    color: #0065fc;
-}
+    #MenuPrincipal ul{
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+        #MenuPrincipal ul li{
+            list-style-type: none;
+            margin: 1em;
+        }
+            #MenuPrincipal ul li a{
+                width: 100%;
+                height: 100%;
+            }
+        #MenuPrincipal ul li:nth-child(1){
+            color: #0065fc;
+        }
+        #MenuPrincipal ul li:nth-child(2){
+            color: gray;
+        }
+        #MenuPrincipal ul li:nth-child(3){
+            font-weight: bold;
+            color: #0065fc;
+        }
 
-/*HEADER : TITRE PRINCIPAL*/
+/*header : Titre principalL*/
 
-h1{
+header h1{
     position: relative;
     flex-grow: 1;
     flex-shrink: 3;
@@ -124,7 +125,7 @@ h1{
     word-spacing: -0.1rem;
 }
 
-/*HEADER : TITRE SECONDAIRE*/
+/*header : Titre secondaire*/
 
 header h2{
     font-size: 0.85rem;
@@ -133,7 +134,8 @@ header h2{
     font-weight: normal;
 }
 
-/*SECTION RECHERCHE : FORMULAIRE*/
+/*Div #Recherche : Formulaire contenant 2 champs*/
+/*Mise en forme générale des deux champs du formulaire*/
 
 #Formulaire fieldset{
     position: relative;
@@ -144,12 +146,12 @@ header h2{
     margin-left: 0rem;
     padding-left: 0rem;;
 }
-    /*FORMULAIRE : Champ de recherche Ville*/
+    /*#Formulaire : Premier champ => Recherche  de la ville*/
 
     #RechercheVille{
         margin-bottom: 0.5rem;
     }
-        /*Création d'un div pour encapsuler l'ICONE, la ZONE DE SAISIE texte et le BOUTON d'envoi des données*/
+        /*RechercheVille : Div encapsulant l'icône, la zone de saisie texte et le bouton d'envoi*/
         .CapsuleRecherche{
             display: inline-flex;
             justify-content: center;
@@ -161,53 +163,53 @@ header h2{
             border-radius: 0.4rem;
             background-color: #999;
         }
-        /* 1°) ICONE Géolocalisation*/
-        .CapsuleRecherche i{
-            position: relative;
-            height: 1.75rem;
-            width: 100%;
-            margin: 0.6rem;
-            padding-top: 0.6rem;
-            color: black;
-        }
-        /* 2°) ZONE DE SAISIE pour la ville recherchée*/
-        #RechercheVille input[type="text"]{
-            position: relative;
-            top: -0.05rem;
-            width: 100%;
-            height: 1.7rem;
-            padding: 0rem 0.2rem 0rem 0.2rem;
-            margin-right:0rem;
-            margin-top: 0rem;
-            margin-bottom: 0rem;
-            border: solid #555 1px;
-            color: black;
-        }
-        #RechercheVille input[type="text"]:focus{
-            box-shadow: 0;
-            height: 1.7rem;
-        }
-        /* 3°) BOUTON d'envoi du formulaire*/
-        #RechercheVille input[type="submit"]{
-            position: relative;
-            width: 100%;
-            height: 1.7rem;
-            background-color: #0065fc;
-            color: white;
-            padding-bottom: 0.2rem;
-            margin-left: 0rem;
-            border: 0px;
-            border-top-right-radius: 0.4rem;
-            border-top-right-radius: 0.4rem;
-        }
-    /*FORMULAIRE : Filtres de recherche*/
+            /*RechercheVille : Icône localisation*/
+            .CapsuleRecherche i{
+                position: relative;
+                height: 1.75rem;
+                width: 100%;
+                margin: 0.6rem;
+                padding-top: 0.6rem;
+                color: black;
+            }
+            /*RechercheVille : Zone de saisie texte pour la ville recherchée*/
+            #RechercheVille input[type="text"]{
+                position: relative;
+                top: -0.05rem;
+                width: 100%;
+                height: 1.7rem;
+                padding: 0rem 0.2rem 0rem 0.2rem;
+                margin-right:0rem;
+                margin-top: 0rem;
+                margin-bottom: 0rem;
+                border: solid #555 1px;
+                color: black;
+            }
+            #RechercheVille input[type="text"]:focus{
+                box-shadow: 0;
+                height: 1.7rem;
+            }
+            /*RechercheVille : Bouton d'envoi du formulaire*/
+            #RechercheVille input[type="submit"]{
+                position: relative;
+                width: 100%;
+                height: 1.7rem;
+                background-color: #0065fc;
+                color: white;
+                padding-bottom: 0.2rem;
+                margin-left: 0rem;
+                border: 0px;
+                border-top-right-radius: 0.4rem;
+                border-top-right-radius: 0.4rem;
+            }
+    /*#Formulaire : Deuxième champ => Filtres de recherche*/
 
     #FiltresRecherche{
         margin-top: 0rem;
         margin-bottom: 0.2rem;
         font-weight: bold;
     }
-        /*Classe générique pour mise en forme des filtres de recherche*/
+        /*FiltresRecherche : Classe générique pour mettre en forme les filtres de recherche*/
         .Filtre{
         display: inline-flex;
         justify-content: center;
@@ -219,88 +221,95 @@ header h2{
         border: solid black 1px;
         border-radius: 0.9em;
         }
-        /*Cases à cocher Checkbox*/
-        #FiltresRecherche input[type="checkbox"]{
-        display: none;
-        }
-        /*Capsule contenant l'icone*/
-        .capsuleIcone{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-sizing: border-box;
-            width: 1.8em ;
-            height: 1.8em;
-            background-color: #deebff;
-            padding: 0.3em 0.3em;
-            border-radius: 0.9em;
-        }
-            /*Icône FontAwesome*/
-            #FiltresRecherche i{
-                background-color: #deebff;
-                font-size: 0.9em;
-                color: #0065fc;
+            /*.Filtre : Cases à cocher*/
+            .Filtre input[type="checkbox"]{
+                display: none;
             }
-        /*Etiquettes Filtres*/
+            /*.Filtre : Capsule contenant l'icône*/
+            .capsuleIcone{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                width: 1.8em ;
+                height: 1.8em;
+                background-color: #deebff;
+                padding: 0.3em 0.3em;
+                border-radius: 0.9em;
+            }
+                /*.capsuleIcone : Icône FontAwesome*/
+                .capsuleIcone i{
+                    background-color: #deebff;
+                    font-size: 0.9em;
+                    color: #0065fc;
+                }
+        /*.Filtre : label (étiquette de filtre)*/
         #FiltresRecherche label{
-        display: inline-block;
-        position: relative;
-        height: 1.8em;
-        width: auto;
-        margin: 0.2em;
-        padding: 0.3em;
-        box-sizing: border-box;
-        margin-right:1em;
-        font-size: 0.8em;
-        font-weight: bold;
+            display: inline-block;
+            position: relative;
+            height: 1.8em;
+            width: auto;
+            margin: 0.2em;
+            padding: 0.3em;
+            box-sizing: border-box;
+            margin-right:1em;
+            font-size: 0.8em;
+            font-weight: bold;
         }
-/*SECTION RECHERCHE : FORMULAIRE*/
-#ResultatEffectif{
-    font-size: 0.75rem;;
-}
-    #ResultatEffectif i{
-        display: inline-block;
-        font-size: 0.6rem;;
-        box-sizing: border-box;
-        padding: 0.2rem 0.5rem;
-        color: #0065fc;
-        border: 1px solid #f2f2f2;
-        border-radius: 50%;
+    /*Formulaire : Div ResultatEffectif */
+    #ResultatEffectif{
+        font-size: 0.75rem;;
     }
-    #ResultatEffectif p{
-        display: inline-block;
-        margin-left: 0.5rem;
-        color: black;
-    }
+        /*ResultatEffectif : Icône Information*/
+        #ResultatEffectif i{
+            display: inline-block;
+            font-size: 0.6rem;;
+            box-sizing: border-box;
+            padding: 0.2rem 0.5rem;
+            color: #0065fc;
+            border: 1px solid #f2f2f2;
+            border-radius: 50%;
+        }
+        /*ResultatEffectif : Paragraphe contenant le nombre de logements trouvés*/
+        #ResultatEffectif p{
+            display: inline-block;
+            margin-left: 0.5rem;
+            color: black;
+        }
 
-/*HEBERGEMENTS : Section 'Classiques'*/
+/*Hebergements : Section 'Classiques'*/
 
 #Classiques{
     position: relative;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
-    width: 65%;
+    justify-content: space-around;
+    width: 67%;
+    height: 34rem;
     background-color: #e9e9e9;
     border-radius: 0.8rem;
 }
-    /*SECTION Classiques : Titre de section*/
+    /*SECTION 'Classiques' : Titre de section*/
     #Classiques h2{
         position: relative;
         width: 90%;
-        margin-left: 3%;
+        height: 10%;
+        margin: 0rem;
+        padding-top: 1rem;
+        padding-left: 1.3rem;
     }
-    /*SECTION Classiques : div '#CartesHebergements' regroupant les cartes Hébergements*/
-    #CartesHebergements{
+    /*SECTION 'Classiques' : div '#GroupeClassique' regroupant les cartes Hébergements*/
+    #GroupeClassique{
         position: relative;
         display: flex;
         flex-flow: column wrap;
         justify-content: space-evenly;
-        align-content: space-around;
-        height: 26rem;
+        align-content: space-evenly;
+        height: 80%;
         width: 100%;
+        margin: 0rem;
     }
-        /*DIV 'CartesHebergements' : div '.CarteH' pour mettre en forme une carte hébergement*/
+        /*DIV 'GroupeClassique' : div '.CarteH' pour mettre en forme une carte hébergement*/
         .carteH{
             position: relative;
             display: flex;
@@ -308,7 +317,7 @@ header h2{
             justify-content: space-evenly;
             align-items: center;
             width: 30%;
-            height: 46%;
+            height: 45%;
             border-radius: 0.8rem;
             padding: auto;
             background-color: #fff;
@@ -341,20 +350,22 @@ header h2{
     #Classiques>a{
         position: relative;    
         width: 90%;
-        height: 0.8rem;
-        margin: 3%;
+        height: 10%;
+        margin: 0rem;
+        padding-left: 1.3rem;
+        padding-top: 0.8rem;
     }
 
-/*HEBERGEMENTS : Section 'Tendances' = Les plus populaires*/
+/*Hebergements : Section 'Tendances' => Les plus populaires*/
 
 #Tendances{
     position: relative;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     width: 30%;
-    height: 35rem;
+    height: 34rem;
     background-color: #e9e9e9;
     border-radius: 0.8rem;
 }
@@ -362,51 +373,79 @@ header h2{
     #Tendances h2{
         position: relative;
         width: 90%;
-        margin-left: 3%;
+        height: 3%;
+        margin-left: 5%;
+        margin-bottom: 10%;
     }
 
-    /*SECTION Tendances : Mise en forme d'une carte tendance 'carteT'*/
+    /*SECTION 'Tendances' : Mise en forme d'une carte tendance 'carteT'*/
     .carteT{
         position: relative;
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
+        flex-flow: column wrap;
+        justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 90%;
         height: 25%;
+        margin-bottom: 8%;
         padding: auto;
         background-color: #fff;
+        border-radius: 0.8rem;
+        font-size: 0.9rem;
     }
 
         /*DIV 'carteT' : Image Logement*/
-        .carteT img{
+        /*Classe générique pour la photo d'un logement (déf. en image de fond)*/
+        .Photo{
             position: relative;
-            width: 95%;
-            height: 50%;
-            margin: auto;
+            width: 36%;
+            height: 100%;
+            margin: 0.3rem;
             border-top-left-radius: 0.6rem;
-            border-top-right-radius: 0.6rem;
+            border-bottom-left-radius: 0.6rem;
+        }
+        /*Retouche spécifique pour chacune des photos de logement (positionnement)*/
+        #Photo_01{
+            background : url('../Images/Hebergements/Le_Soleil_Du_Matin.jpg') no-repeat;
+            background-position: 10% 20%;
+            background-size: cover;
+        }
+        #Photo_02{
+            background : url('../Images/Hebergements/Au_Coeur_De_L_Eau.jpg') no-repeat;
+            background-position: top 10% left 20%;
+            background-size: cover;
+        }
+        #Photo_03{
+            background : url('../Images/Hebergements/Tout_Bleu_Et_Blanc.jpg') no-repeat;
+            background-position: top 10% left 20%;
+            background-size: cover;
         }
         /*DIV 'carteT': Nom & Pix Logement*/
         .carteT p{
             position: relative;
-            width: 90%;
-            height: 15%;
-            margin: auto;
+            width: 62%;
+            height: 75%;
+            margin-top: 3%;
         }
         /*DIV 'CarteT': Notation Logement*/
-        .carteT div{
+        .carteT div[class^="Etoiles"]{
             position: relative;
-            width: 90%;
-            height: 15%;
+            width: 62%;
+            height: 25%;
             margin: auto;
         }
 
+/*SECTION 'Activites' : Titre de section*/
+#Activites h2{
+    position: relative;
+    width: 90%;
+    height: 5%;
+    margin: 0rem;
+}
 
+/*SECTION 'Activites' : div '#GroupeActivites' regroupant l'ensemble des cartes Activites*/
 
-/*SECTION 'Activites' : div '#CartesActivites' regroupant les cartes Activites*/
-
-#CartesActivites{
+#GroupeActivites{
     position: relative;
     display: flex;
     flex-flow: column wrap;
@@ -414,40 +453,65 @@ header h2{
     width: 100%;
     height: 10rem;
 }
-/*SECTION 'Activites' : div'.CarteA' pour mettre en forme une carte Activité'*/
+    /*DIV 'CartesActivites' : classe générique pour mettre en forme les différentes cartes Activités'*/
 
-.CarteA{
-    position: relative;
-    vertical-align: bottom;
-    width: 25%;
-}
-/*Dimensionnement des cartes Activité*/
-#CarteA1{
-    position: relative;
-    height: 100%;
-}
-#CarteA2{
-    position: relative;
-    height: 50%;
-}
-#CarteA3{
-    position: relative;
-    height: 50%;
-}
-#CarteA4{
-    position: relative;
-    height: 100%;
-}
-#CarteA5{
-    position: relative;
-    height: 50%;
-}
-#CarteA6{
-    position: relative;
-    height: 50%;
-}
+    .CarteA{
+        position: relative;
+        vertical-align: bottom;
+        width: 25%;
+    }
+    /*DIV 'CartesActivites' : Dimensionnement des cartes Activité*/
+    #CarteA1{
+        position: relative;
+        height: 100%;
+    }
+    #CarteA2{
+        position: relative;
+        height: 50%;
+    }
+    #CarteA3{
+        position: relative;
+        height: 50%;
+    }
+    #CarteA4{
+        position: relative;
+        height: 100%;
+    }
+    #CarteA5{
+        position: relative;
+        height: 50%;
+    }
+    #CarteA6{
+        position: relative;
+        height: 50%;
+    }
 
-
+/*FOOTER : Menu navigation secondaire*/
+#MenuSecondaire{
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content:stretch ;
+    height: 10rem;
+    width: 100%;
+}
+    /*Menu de navigation en 3 colonnes*/
+    #MenuSecondaire ul{
+        height: 100%;
+        width: 33%;
+    }
+    /*Mise en forme des éléments de liste du menu de navigation secondaire*/
+    #MenuSecondaire ul li{
+        list-style-type: none;
+        font-size: 0.8rem;
+    }
+    #MenuSecondaire ul li:nth-child(1){
+        font-weight: bold;
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    }
 /*Notes Infos
 Couleurs Charte Graphique :
 bleu #0065fc;
