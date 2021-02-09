@@ -153,9 +153,9 @@ header h2{
     font-weight: normal;
 }
 
-/*Div #Recherche : Formulaire contenant 2 champs*/
-/*Mise en forme générale des deux champs du formulaire*/
+/*Div #Recherche : FORMULAIRE contenant 2 champs*/
 
+/*Mise en forme générale des deux champs du formulaire*/
 #Formulaire fieldset{
     position: relative;
     width: 100%;
@@ -176,50 +176,47 @@ header h2{
             justify-content: center;
             align-items: center;
             position: relative;
-            height: 1.75rem;
+            height: 1.8rem;
             width: auto;
-            border: solid #999 1px;
+            border: solid gray 1px;
             border-radius: 0.4rem;
-            background-color: #999;
+            background-color: #f2f2f2;
         }
             /*RechercheVille : Icône localisation*/
             .CapsuleRecherche i{
                 position: relative;
-                height: 1.75rem;
+                height: 1.8rem;
                 width: 100%;
                 margin: 0.6rem;
                 padding-top: 0.6rem;
+                border-radius: 0.8rem;
                 color: black;
             }
             /*RechercheVille : Zone de saisie texte pour la ville recherchée*/
-            #RechercheVille input[type="text"]{
+            #RechercheVille input[type="text"], #RechercheVille input[type="text"]:focus{
                 position: relative;
-                top: -0.05rem;
                 width: 100%;
                 height: 1.7rem;
                 padding: 0rem 0.2rem 0rem 0.2rem;
                 margin-right:0rem;
                 margin-top: 0rem;
                 margin-bottom: 0rem;
-                border: solid #555 1px;
+                border: none;
                 color: black;
-            }
-            #RechercheVille input[type="text"]:focus{
-                box-shadow: 0;
-                height: 1.7rem;
             }
             /*RechercheVille : Bouton d'envoi du formulaire*/
             #RechercheVille input[type="submit"]{
                 position: relative;
                 width: 100%;
-                height: 1.7rem;
+                top: 0rem;
+                height: 1.8rem;
                 background-color: #0065fc;
                 color: white;
                 padding-bottom: 0.2rem;
                 margin-left: 0rem;
                 border: 0px;
                 border-top-right-radius: 0.4rem;
-                border-top-right-radius: 0.4rem;
+                border-bottom-right-radius: 0.4rem;
             }
     /*#Formulaire : Deuxième champ => Filtres de recherche*/
 
@@ -304,7 +301,7 @@ header h2{
     justify-content: space-evenly;
     width: 67%;
     height: 100%;
-    background-color: #e9e9e9;
+    background-color: #f2f2f2;
     border-radius: 0.8rem;
 }
     /*SECTION 'Classiques' : Titre de section*/
@@ -449,6 +446,7 @@ header h2{
         margin: 0rem;
         padding-left: 1.3rem;
         padding-top: 0.8rem;
+        font-size: 0.9rem;
     }
 
 /*Hebergements : Section 'Tendances' => Les plus populaires*/
@@ -461,7 +459,7 @@ header h2{
     align-items: center;
     width: 31.5%;
     height: 100%;
-    background-color: #e9e9e9;
+    background-color: #f2f2f2;
     border-radius: 0.8rem;
 }
     /*SECTION 'Tendances' : Titre de section*/
@@ -665,7 +663,7 @@ header h2{
     align-content:stretch ;
     height: 9.5rem;
     width: 100%;
-    background-color: #e9e9e9 ;
+    background-color: #f2f2f2;
 }
     /*Menu de navigation en 3 colonnes*/
     #MenuSecondaire ul{
@@ -686,9 +684,3 @@ header h2{
         font-size: 1rem;
         padding-bottom: 0.5rem;
     }
-/*Notes Infos
-Couleurs Charte Graphique :
-bleu #0065fc;
-bleu clair : #deebff;
-gris pour le fond #f2f2f2;
-*/
