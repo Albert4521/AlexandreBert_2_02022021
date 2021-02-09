@@ -52,6 +52,7 @@ header{
     justify-content: space-between;
     align-items: flex-start;
     width: 92.7%;
+    height: 29rem;
     margin: 1rem 0rem 2rem 0rem;
 }
 #Activites{
@@ -63,7 +64,7 @@ header{
     justify-content: center;
     align-content: stretch;
     width: 92.7%;
-    height: 22rem;
+    height: 21.5rem;
     margin: 1rem 0rem;
     border-radius: 0.8rem;
 }
@@ -302,7 +303,7 @@ header h2{
     flex-flow: column nowrap;
     justify-content: space-evenly;
     width: 67%;
-    height: 34rem;
+    height: 100%;
     background-color: #e9e9e9;
     border-radius: 0.8rem;
 }
@@ -324,7 +325,7 @@ header h2{
         flex-flow: column wrap;
         justify-content: space-evenly;
         align-content: space-evenly;
-        height: 80%;
+        height: 83%;
         width: 100%;
         margin: 0rem;
     }
@@ -336,7 +337,7 @@ header h2{
             justify-content: space-evenly;
             align-items: center;
             width: 30%;
-            height: 45%;
+            height: 46%;
             margin: 0rem;
             border-radius: 0.8rem;
             padding: auto;
@@ -353,43 +354,43 @@ header h2{
                 height: 60%;
                 background : url('../Images/Hebergements/Auberge_La_Cannebière.jpg') no-repeat;
                 background-clip: border-box;
-                background-position: 0% 0%;
-                background-size: cover;
+                background-position: top 45% left 0%;
+                background-size: 100%;
             }
             #Photo_02{
                 width: 95%;
                 height: 60%;
                 background : url('../Images/Hebergements/Hotel_De_La_Mer.jpg') no-repeat;
-                background-position: 10% 20%;
-                background-size: cover;
+                background-position: top 40% left 0%;
+                background-size: 100%;
             }
             #Photo_03{
                 width: 95%;
                 height: 60%;
                 background : url('../Images/Hebergements/Hotel_Du_Port.jpg') no-repeat;
-                background-position: 10% 20%;
-                background-size: cover;
+                background-position: top 65% left 5%;
+                background-size: 100%;
             }
             #Photo_04{
                 width: 95%;
                 height: 60%;
                 background : url('../Images/Hebergements/Auberge_Le Pannier.jpg') no-repeat;
-                background-position: 10% 20%;
-                background-size: cover;
+                background-position: top 50% left 0%;
+                background-size: 100%;
             }
             #Photo_05{
                 width: 95%;
                 height: 60%;
                 background : url('../Images/Hebergements/Hotel_Les_Mouettes.jpg') no-repeat;
-                background-position: 10% 20%;
-                background-size: cover;
+                background-position: top 50% left 0%;
+                background-size: 100%;
             }
             #Photo_06{
                 width: 95%;
                 height: 60%;
                 background : url('../Images/Hebergements/Hôtel_Chez_Amina.jpg') no-repeat;
-                background-position: 10% 20%;
-                background-size: cover;
+                background-position: top 50% right 30%;
+                background-size: 100%;
             }
                         
         
@@ -397,7 +398,7 @@ header h2{
             .carteH p{
                 position: relative;
                 width: 90%;
-                height: 10%;
+                height: 15%;
                 margin: 0rem;
                 font-size: 0.85rem;
             }
@@ -458,8 +459,8 @@ header h2{
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    width: 30%;
-    height: 34rem;
+    width: 31.5%;
+    height: 100%;
     background-color: #e9e9e9;
     border-radius: 0.8rem;
 }
@@ -467,7 +468,7 @@ header h2{
     #Tendances h2{
         position: relative;
         width: 90%;
-        height: 3%;
+        height: 4%;
         box-sizing: border-box;
         margin-left: 5%;
         margin-bottom: 15%;
@@ -487,7 +488,8 @@ header h2{
         align-items: center;
         width: 90%;
         height: 25%;
-        margin-bottom: 8%;
+        box-sizing: border-box;
+        margin-bottom: 2%;
         padding: auto;
         background-color: #fff;
         border-radius: 0.8rem;
@@ -507,7 +509,7 @@ header h2{
         /*Définition des photos Logements Tendances et rétouches spécifiques*/
         #Photo_07{
             background : url('../Images/Hebergements/Le_Soleil_Du_Matin.jpg') no-repeat;
-            background-position: 10% 20%;
+            background-position: top 0% left 50%;
             background-size: cover;
         }
         #Photo_08{
@@ -517,14 +519,14 @@ header h2{
         }
         #Photo_09{
             background : url('../Images/Hebergements/Tout_Bleu_Et_Blanc.jpg') no-repeat;
-            background-position: top 10% left 20%;
+            background-position: top 40% left 0%;
             background-size: cover;
         }
         /*DIV 'carteT': Nom & Pix Logement*/
         .carteT p{
             position: relative;
             width: 60%;
-            height: 50%;
+            height: 40%;
             box-sizing: border-box;
             padding: 0rem 0.5rem 0rem 0.2rem;
         }
@@ -532,7 +534,7 @@ header h2{
         .NotationT{
             position: relative;
             width: 60%;
-            height: 10%;
+            height: 15%;
             box-sizing: border-box;
             margin-top: 0.5rem;
             margin-bottom: 0.5rem;
@@ -546,7 +548,7 @@ header h2{
     width: 100%;
     height: 10%;
     margin: 0rem;
-    padding-left: 1rem;
+    padding-left: 0rem;
     padding-bottom: 0.5rem;
     font-size: 1.15rem;
 }
@@ -577,10 +579,10 @@ header h2{
         height: 100%;
     }
     #CarteA2{
-        height: 46%;
+        height: 57%;
     }
     #CarteA3{
-        height: 46%;
+        height: 40%;
     }
     #CarteA4{
         height: 100%;
@@ -603,13 +605,13 @@ header h2{
         #Photo_10{
             height: 88%;
             background : url('../Images/Activités/Vieux_Port.jpg') no-repeat;
-            background-position: 10% 20%;
+            background-position: top 90% left 40%;
             background-size: cover;
         }
         #Photo_11{
             height: 77%;
             background : url('../Images/Activités/Fort de Pomègues.jpg') no-repeat;
-            background-position: top 10% left 20%;
+            background-position: top 45% left 20%;
             background-size: cover;
         }
         #Photo_12{
@@ -621,7 +623,7 @@ header h2{
         #Photo_13{
             height: 88%;
             background : url('../Images/Activités/Parc_National_Calanques.jpg') no-repeat;
-            background-position: top 10% left 20%;
+            background-position: top 70% left 35%;
             background-size: cover;
         }
         #Photo_14{
@@ -631,7 +633,7 @@ header h2{
         }
         #Photo_15{
             background : url('../Images/Activités/Parc_Longchamp.jpg') no-repeat;
-            background-position: top 10% left 20%;
+            background-position: top 25% left 20%;
             background-size: cover;
         }
 
