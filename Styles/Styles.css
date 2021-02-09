@@ -129,7 +129,7 @@ footer{
             color: #0065fc;
         }
 
-/*header : Titre principalL*/
+/*header : Titre principal*/
 
 header h1{
     position: relative;
@@ -223,20 +223,49 @@ header h2{
     #FiltresRecherche{
         margin-top: 0rem;
         margin-bottom: 0.2rem;
+        margin-left: 0rem;
         font-weight: bold;
     }
+        #FiltresRecherche label:nth-child(1){
+            margin: 0rem 0.2rem 0rem 0rem;
+            padding-left: 0rem;
+        }
+
         /*FiltresRecherche : Classe générique pour mettre en forme les filtres de recherche*/
         .Filtre{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        height: 1.8rem;
-        width: auto;
-        margin-right: 0.8rem;
-        border: solid black 1px;
-        border-radius: 0.9rem;
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            height: 1.8rem;
+            width: auto;
+            margin-right: 0.8rem;
+            margin-left: 0rem;
+            border: solid black 1px;
+            border-radius: 0.9rem;
+            transition-property: all;
+            transition-duration: 0.7s;
         }
+        /*Changement d'apparence des filtres au survol*/
+
+        .Filtre:hover{
+            background-color: #f2f2f2;
+        }
+        .Filtre:hover .capsuleIcone{
+            transform: scale(1.7);
+            border: solid 2px #0065fc;
+        }
+        /*Changement d'apparence des filtres sélectionnés*/
+
+        .Filtre input[type="checkbox"]:checked + div + label{
+            color: #0065fc;
+            font-weight: bold;
+        }
+        .Filtre input[type="checkbox"]:checked + .capsuleIcone{
+            transform: scale(1.7);
+            border: solid 4px #0065fc;
+        }
+
             /*.Filtre : Cases à cocher*/
             .Filtre input[type="checkbox"]{
                 display: none;
@@ -250,6 +279,7 @@ header h2{
                 width: 1.8rem ;
                 height: 1.8rem;
                 background-color: #deebff;
+                margin: 0rem;
                 padding: 0.3rem 0.3rem;
                 border-radius: 0.9rem;
             }
@@ -260,7 +290,7 @@ header h2{
                     color: #0065fc;
                 }
         /*.Filtre : label (étiquette de filtre)*/
-        #FiltresRecherche label{
+        .Filtre label{
             display: inline-block;
             position: relative;
             height: 1.8rem;
@@ -268,8 +298,7 @@ header h2{
             padding: 0.4rem;
             box-sizing: border-box;
             margin-right:1.2rem;
-            font-size: 0.8rem;
-            font-weight: bold;
+            font-size: 0.9rem;
         }
     /*Formulaire : Div ResultatEffectif */
     #ResultatEffectif{
@@ -337,7 +366,6 @@ header h2{
             height: 46%;
             margin: 0rem;
             border-radius: 0.8rem;
-            padding: auto;
             background-color: #fff;
         }
             .PhotoClassiques{
@@ -488,7 +516,6 @@ header h2{
         height: 25%;
         box-sizing: border-box;
         margin-bottom: 2%;
-        padding: auto;
         background-color: #fff;
         border-radius: 0.8rem;
         font-size: 0.9rem;
