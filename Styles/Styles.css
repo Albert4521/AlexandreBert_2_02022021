@@ -19,6 +19,7 @@ a{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: center;
     width: 1100px;
     height: auto;
     margin: auto;
@@ -29,13 +30,14 @@ header{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width: 100%;
+    width: 92.7%;
 }
 #Recherche{
     position: relative;
     display: flex;
     flex-flow: column nowrap;
     justify-content: stretch;
+    width: 92.7%;
 }
 #Hebergements{
     position: relative;
@@ -43,8 +45,8 @@ header{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
-    margin: 1rem 0rem;
+    width: 92.7%;
+    margin: 1rem 0rem 2rem 0rem;
 }
 #Activites{
     position: relative;
@@ -52,14 +54,14 @@ header{
     flex-flow: column nowrap;
     justify-content: center;
     align-content: stretch;
-    width: 100%;
+    width: 92.7%;
     height: 22rem;
     margin: 1rem 0rem;
     border-radius: 0.8rem;
-    background-color: #e9e9e9;
 }
 footer{
     position: relative;
+    width: 100%;;
     margin: 2rem 0rem;
 }
 
@@ -285,7 +287,7 @@ header h2{
     position: relative;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 67%;
     height: 34rem;
     background-color: #e9e9e9;
@@ -296,9 +298,11 @@ header h2{
         position: relative;
         width: 90%;
         height: 10%;
+        box-sizing: border-box;
         margin: 0rem;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         padding-left: 1.3rem;
+        font-size: 1.15rem;
     }
     /*SECTION 'Classiques' : div '#GroupeClassique' regroupant les cartes Hébergements*/
     #GroupeClassique{
@@ -376,10 +380,16 @@ header h2{
         position: relative;
         width: 90%;
         height: 3%;
+        box-sizing: border-box;
         margin-left: 5%;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
+        padding-top: 0.8rem;
+        font-size: 1.15rem;
     }
-
+        /*Tendances h2 : Icone du titre*/
+        #Tendances h2 i{
+            margin-left: 4.5rem;
+        }
     /*SECTION 'Tendances' : Mise en forme d'une carte tendance 'carteT'*/
     .carteT{
         position: relative;
@@ -407,17 +417,17 @@ header h2{
             border-bottom-left-radius: 0.6rem;
         }
         /*Retouche spécifique pour chacune des photos de logement (positionnement)*/
-        #Photo_01{
+        #Photo_07{
             background : url('../Images/Hebergements/Le_Soleil_Du_Matin.jpg') no-repeat;
             background-position: 10% 20%;
             background-size: cover;
         }
-        #Photo_02{
+        #Photo_08{
             background : url('../Images/Hebergements/Au_Coeur_De_L_Eau.jpg') no-repeat;
             background-position: top 10% left 20%;
             background-size: cover;
         }
-        #Photo_03{
+        #Photo_09{
             background : url('../Images/Hebergements/Tout_Bleu_Et_Blanc.jpg') no-repeat;
             background-position: top 10% left 20%;
             background-size: cover;
@@ -427,7 +437,9 @@ header h2{
             position: relative;
             width: 62%;
             height: 75%;
+            box-sizing: border-box;
             margin-top: 3%;
+            padding: 0.5rem;
         }
         /*DIV 'CarteT': Notation Logement*/
         .carteT div[class^="Etoiles"]{
@@ -444,7 +456,8 @@ header h2{
     height: 10%;
     margin: 0rem;
     padding-left: 1rem;
-    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.15rem;
 }
 
 /*SECTION 'Activites' : div '#GroupeActivites' regroupant l'ensemble des cartes Activites*/
@@ -453,8 +466,8 @@ header h2{
     position: relative;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
+    justify-content: space-between;
+    align-content: space-between;
     width: 100%;
     height: 90%;
 }
@@ -465,97 +478,107 @@ header h2{
         vertical-align: bottom;
         width: 23%;
         margin: 0rem;
+        border-radius: 0.8rem;
+        box-shadow: #999 0rem 0rem 0.5rem;
     }
     /*DIV 'CartesActivites' : Dimensionnement des cartes Activité*/
     #CarteA1{
-        height: 95%;
+        height: 100%;
     }
     #CarteA2{
-        height: 40%;
-        top: -1rem;
+        height: 46%;
     }
     #CarteA3{
-        height: 40%;
-        top: -1rem;
+        height: 46%;
     }
     #CarteA4{
-        height: 95%;
+        height: 100%;
     }
     #CarteA5{
-        height: 40%;
-        top: -1rem;
+        height: 46%;
     }
     #CarteA6{
-        height: 40%;
-        top: -1rem;
+        height: 46%;
     }
         /*Classe générique pour la photo d'une activité (déf. en image de fond)*/
         .PhotoActivite{
             position: relative;
             width: 100%;
             height: 80%;
-            border-top-left-radius: 0.6rem;
-            border-top-right-radius: 0.6rem;
+            border-top-left-radius: 0.8rem;
+            border-top-right-radius: 0.8rem;
         }
-        /*Retouche spécifique pour chacune des photos de logement (positionnement)*/
-        #Photo_04{
-            background : url('../Images/Activités/Vieux_Port.jpg') no-repeat;
-            background-position: 10% 20%;
-            background-size: cover;
-        }
-        #Photo_05{
-            background : url('../Images/Activités/Fort de Pomègues.jpg') no-repeat;
-            background-position: top 10% left 20%;
-            background-size: cover;
-        }
-        #Photo_06{
-            background : url('../Images/Activités/Iles_Du_Frioul.jpg') no-repeat;
-            background-position: top 10% left 20%;
-            background-size: cover;
-        }
-        #Photo_07{
-            background : url('../Images/Activités/Parc_National_Calanques.jpg') no-repeat;
-            background-position: top 10% left 20%;
-            background-size: cover;
-        }
-        #Photo_08{
-            background : url('../Images/Activités/Notre_Dame_De_La_Garde.jpg') no-repeat;
-            background-position: top 10% left 20%;
-            background-size: cover;
-        }
-        #Photo_09{
-            background : url('../Images/Activités/Parc_Longchamp.jpg') no-repeat;
-            background-position: top 10% left 20%;
-            background-size: cover;
-        }
-        /*Nom Activité*/
+        /*Mise en forma générale pour les noms d'activités*/
         .CarteA p{
+            position: relative;
             width: 100%;
-            height: 10%;
+            height: auto;
+            box-sizing: border-box;
             margin: 0rem;
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
             padding-left: 0.6rem;
+            background-color: white;
             font-size: 0.8rem;
             font-weight: bold;
+            border-bottom-left-radius: 0.8rem;
+            border-bottom-right-radius: 0.8rem;
+        }
+        /*Retouche spécifique pour chacune des cartes Activité (positionnement)*/
+        #Photo_10{
+            height: 88%;
+            background : url('../Images/Activités/Vieux_Port.jpg') no-repeat;
+            background-position: 10% 20%;
+            background-size: cover;
+        }
+        #Photo_11{
+            height: 77%;
+            background : url('../Images/Activités/Fort de Pomègues.jpg') no-repeat;
+            background-position: top 10% left 20%;
+            background-size: cover;
+        }
+        #Photo_12{
+            height: 76%;
+            background : url('../Images/Activités/Iles_Du_Frioul.jpg') no-repeat;
+            background-position: top 10% left 20%;
+            background-size: cover;
+        }
+        #Photo_13{
+            height: 88%;
+            background : url('../Images/Activités/Parc_National_Calanques.jpg') no-repeat;
+            background-position: top 10% left 20%;
+            background-size: cover;
+        }
+        #Photo_14{
+            background : url('../Images/Activités/Notre_Dame_De_La_Garde.jpg') no-repeat;
+            background-position: top 10% left 20%;
+            background-size: cover;
+        }
+        #Photo_15{
+            background : url('../Images/Activités/Parc_Longchamp.jpg') no-repeat;
+            background-position: top 10% left 20%;
+            background-size: cover;
         }
 
-
-
 /*FOOTER : Menu navigation secondaire*/
+
 #MenuSecondaire{
     position: relative;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     align-content:stretch ;
-    height: 10rem;
+    height: 9.5rem;
     width: 100%;
     background-color: #e9e9e9 ;
 }
     /*Menu de navigation en 3 colonnes*/
     #MenuSecondaire ul{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        position: relative;
         height: 100%;
         width: 33%;
     }
