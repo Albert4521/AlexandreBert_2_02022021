@@ -27,6 +27,8 @@ a{
 }
 header{
     position: relative;
+    flex-grow: 1;
+    flex-shrink: 4;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -34,6 +36,8 @@ header{
 }
 #Recherche{
     position: relative;
+    flex-grow: 1;
+    flex-shrink: 4;
     display: flex;
     flex-flow: column nowrap;
     justify-content: stretch;
@@ -41,6 +45,8 @@ header{
 }
 #Hebergements{
     position: relative;
+    flex-grow: 1;
+    flex-shrink: 4;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -50,6 +56,8 @@ header{
 }
 #Activites{
     position: relative;
+    flex-grow: 1;
+    flex-shrink: 4;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -61,6 +69,8 @@ header{
 }
 footer{
     position: relative;
+    flex-grow: 1;
+    flex-shrink: 4;
     width: 100%;;
     margin: 2rem 0rem;
 }
@@ -69,7 +79,7 @@ footer{
 
 #Logo{
     flex-grow: 1;
-    flex-shrink: 3;
+    flex-shrink: 4;
     width: 50%;
     height: auto;
     flex-grow: 1;
@@ -83,7 +93,7 @@ footer{
 
 #MenuPincipal{
     flex-grow: 1;
-    flex-shrink: 3;
+    flex-shrink: 4;
     position: relative;
     display: flex;
     flex-flow: row nowrap;
@@ -123,7 +133,7 @@ footer{
 header h1{
     position: relative;
     flex-grow: 1;
-    flex-shrink: 3;
+    flex-shrink: 4;
     width: 100%;
     margin-bottom: 0rem;
     font-size: 1.15rem;
@@ -133,6 +143,9 @@ header h1{
 /*header : Titre secondaire*/
 
 header h2{
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 4;
     font-size: 0.85rem;
     margin-top: 0rem;
     margin-bottom: 0.5rem;
@@ -324,34 +337,109 @@ header h2{
             align-items: center;
             width: 30%;
             height: 45%;
+            margin: 0rem;
             border-radius: 0.8rem;
             padding: auto;
             background-color: #fff;
-            font-size: 0.9rem;
         }
-            /*DIV 'CarteH' : Image Logement*/
-            .carteH img{
+            .PhotoClassiques{
                 position: relative;
-                width: 95%;
-                height: 59%;
-                margin: auto;
                 border-top-left-radius: 0.6rem;
                 border-top-right-radius: 0.6rem;
             }
+            /*Définition des photos Logements Classiques et rétouches spécifiques*/
+            #Photo_01{
+                width: 95%;
+                height: 60%;
+                background : url('../Images/Hebergements/Auberge_La_Cannebière.jpg') no-repeat;
+                background-clip: border-box;
+                background-position: 0% 0%;
+                background-size: cover;
+            }
+            #Photo_02{
+                width: 95%;
+                height: 60%;
+                background : url('../Images/Hebergements/Hotel_De_La_Mer.jpg') no-repeat;
+                background-position: 10% 20%;
+                background-size: cover;
+            }
+            #Photo_03{
+                width: 95%;
+                height: 60%;
+                background : url('../Images/Hebergements/Hotel_Du_Port.jpg') no-repeat;
+                background-position: 10% 20%;
+                background-size: cover;
+            }
+            #Photo_04{
+                width: 95%;
+                height: 60%;
+                background : url('../Images/Hebergements/Auberge_Le Pannier.jpg') no-repeat;
+                background-position: 10% 20%;
+                background-size: cover;
+            }
+            #Photo_05{
+                width: 95%;
+                height: 60%;
+                background : url('../Images/Hebergements/Hotel_Les_Mouettes.jpg') no-repeat;
+                background-position: 10% 20%;
+                background-size: cover;
+            }
+            #Photo_06{
+                width: 95%;
+                height: 60%;
+                background : url('../Images/Hebergements/Hôtel_Chez_Amina.jpg') no-repeat;
+                background-position: 10% 20%;
+                background-size: cover;
+            }
+                        
+        
             /*DIV 'CarteH': Nom & Pix Logement*/
             .carteH p{
                 position: relative;
                 width: 90%;
-                height: 15%;
-                margin: auto;
+                height: 10%;
+                margin: 0rem;
+                font-size: 0.85rem;
             }
             /*DIV 'CarteH': Notation Logement*/
-            .carteH div{
+            .Notation{
                 position: relative;
                 width: 90%;
-                height: 15%;
-                margin: auto;
+                height: 10%;
+                margin-top: 0.6rem;
+                padding-left: 0rem;
             }
+            .UneEtoile{
+                background: url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_grise.svg'),url('../Images/Icones/Etoile_grise.svg'),url('../Images/Icones/Etoile_grise.svg'),url('../Images/Icones/Etoile_grise.svg');
+                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+                background-position: 0% 0%,9% 0%,18% 0%,27% 0%,36% 0%;
+                background-size: 8%;
+            }
+            .DeuxEtoiles{
+                background: url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_grise.svg'),url('../Images/Icones/Etoile_grise.svg'),url('../Images/Icones/Etoile_grise.svg');
+                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+                background-position: 0% 0%,9% 0%,18% 0%,27% 0%,36% 0%;
+                background-size: 8%;
+            }
+            .TroisEtoiles{
+                background: url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_grise.svg'),url('../Images/Icones/Etoile_grise.svg');
+                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+                background-position: 0% 0%,9% 0%,18% 0%,27% 0%,36% 0%;
+                background-size: 8%;
+            }
+            .QuatreEtoiles{
+                background: url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_grise.svg');
+                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+                background-position: 0% 0%,9% 0%,18% 0%,27% 0%,36% 0%;
+                background-size: 8%;
+            }
+            .CinqEtoiles{
+                background: url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg');
+                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+                background-position: 0% 0%,9% 0%,18% 0%,27% 0%,36% 0%;
+                background-size: 8%;
+            }
+
     /*SECTION Classiques : Lien "Afficher plus" de logements*/
     #Classiques>a{
         position: relative;    
@@ -395,7 +483,7 @@ header h2{
         position: relative;
         display: flex;
         flex-flow: column wrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         width: 90%;
         height: 25%;
@@ -408,7 +496,7 @@ header h2{
 
         /*DIV 'carteT' : Image Logement*/
         /*Classe générique pour la photo d'un logement (déf. en image de fond)*/
-        .Photo{
+        .PhotoTendances{
             position: relative;
             width: 36%;
             height: 100%;
@@ -416,7 +504,7 @@ header h2{
             border-top-left-radius: 0.6rem;
             border-bottom-left-radius: 0.6rem;
         }
-        /*Retouche spécifique pour chacune des photos de logement (positionnement)*/
+        /*Définition des photos Logements Tendances et rétouches spécifiques*/
         #Photo_07{
             background : url('../Images/Hebergements/Le_Soleil_Du_Matin.jpg') no-repeat;
             background-position: 10% 20%;
@@ -435,19 +523,22 @@ header h2{
         /*DIV 'carteT': Nom & Pix Logement*/
         .carteT p{
             position: relative;
-            width: 62%;
-            height: 75%;
+            width: 60%;
+            height: 50%;
             box-sizing: border-box;
-            margin-top: 3%;
-            padding: 0.5rem;
+            padding: 0rem 0.5rem 0rem 0.2rem;
         }
-        /*DIV 'CarteT': Notation Logement*/
-        .carteT div[class^="Etoiles"]{
+        /*DIV 'CarteH': Notation Logement*/
+        .NotationT{
             position: relative;
-            width: 62%;
-            height: 25%;
-            margin: auto;
+            width: 60%;
+            height: 10%;
+            box-sizing: border-box;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            margin-left: 0.4rem;
         }
+        /*Pour les étoiles mise en forme idem aux Logemetns Classiques*/
 
 /*SECTION 'Activites' : Titre de section*/
 #Activites h2{
@@ -508,23 +599,7 @@ header h2{
             border-top-left-radius: 0.8rem;
             border-top-right-radius: 0.8rem;
         }
-        /*Mise en forma générale pour les noms d'activités*/
-        .CarteA p{
-            position: relative;
-            width: 100%;
-            height: auto;
-            box-sizing: border-box;
-            margin: 0rem;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            padding-left: 0.6rem;
-            background-color: white;
-            font-size: 0.8rem;
-            font-weight: bold;
-            border-bottom-left-radius: 0.8rem;
-            border-bottom-right-radius: 0.8rem;
-        }
-        /*Retouche spécifique pour chacune des cartes Activité (positionnement)*/
+        /*Définition des photos Activités et rétouches spécifiques*/
         #Photo_10{
             height: 88%;
             background : url('../Images/Activités/Vieux_Port.jpg') no-repeat;
@@ -558,6 +633,23 @@ header h2{
             background : url('../Images/Activités/Parc_Longchamp.jpg') no-repeat;
             background-position: top 10% left 20%;
             background-size: cover;
+        }
+
+        /*Mise en forma générale pour les noms d'activités*/
+        .CarteA p{
+            position: relative;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            margin: 0rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.6rem;
+            background-color: white;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-bottom-left-radius: 0.8rem;
+            border-bottom-right-radius: 0.8rem;
         }
 
 /*FOOTER : Menu navigation secondaire*/
