@@ -112,7 +112,11 @@ footer{
     }
         #MenuPrincipal ul li{
             list-style-type: none;
+            line-height: 3rem;
             margin: 1em;
+        }
+        #MenuPrincipal ul li:nth-child(1){
+            border-top: #0065fc solid 2px ;
         }
             #MenuPrincipal ul li a{
                 width: 100%;
