@@ -14,31 +14,36 @@ a{
 }
 
 /*ELEMENTS PRINCIPAUX DE LA PAGE*/
+body{
+    margin:0px;
+    font-family: 'Raleway-Regular', Arial;
+}
 #Bloc_Page{
     position: relative;
     display: flex;
+    box-sizing: border-box;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
     display: flex;
-    width: 80%;
-    min-width: 960px;
-    max-width: 2560px;
-    height: auto;
+    width: 90%;
     margin: auto;
     font-family: 'Raleway-Regular', Arial;
 }
 header{
     position: relative;
+    box-sizing: border-box;
     flex-grow: 1;
     flex-shrink: 4;
     display: flex;
     width: 100%;
+    padding: 0rem 0.5rem;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 #Recherche{
     position: relative;
+    box-sizing: border-box;
     flex-grow: 1;
     flex-shrink: 4;
     display: flex;
@@ -48,18 +53,20 @@ header{
 }
 #Hebergements{
     position: relative;
+    box-sizing: border-box;
     flex-grow: 1;
     flex-shrink: 4;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
     width:100%;
-    height: 29rem;
+    height: 33rem;
     margin: 1rem 0rem 2rem 0rem;
 }
 #Activites{
     position: relative;
+    box-sizing: border-box;
     flex-grow: 1;
     flex-shrink: 4;
     display: flex;
@@ -67,16 +74,17 @@ header{
     justify-content: center;
     align-content: stretch;
     width:100%;
-    height: 21.5rem;
+    height: 22rem;
     margin: 1rem 0rem;
     border-radius: 0.8rem;
 }
 footer{
     position: relative;
+    box-sizing: border-box;
     flex-grow: 1;
     flex-shrink: 4;
     width:100%;
-    margin: 2rem 0rem;
+    margin: 1rem 0 0 0;
 }
 
 /*HEADER : LOGO RESERVIA */
@@ -84,13 +92,8 @@ footer{
 #Logo{
     flex-grow: 1;
     flex-shrink: 4;
-    width: 50%;
-    height: auto;
+    width: 100px;
     flex-grow: 1;
-}
-#Logo img{
-    width: 20%;
-    height: 100%;
 }
 
 /*HEADER : MENU NAVIGATION PRINCIPALE*/
@@ -152,7 +155,6 @@ header h1{
     width: 100%;
     margin-bottom: 0rem;
     font-size: 1.15rem;
-    word-spacing: -0.1rem;
 }
 
 /*header : Titre secondaire*/
@@ -358,12 +360,12 @@ header h2{
     /*SECTION 'Classiques' : Titre de section*/
     #Classiques h2{
         position: relative;
-        width: 90%;
-        height: 10%;
         box-sizing: border-box;
+        width: 90%;
+        height: 5%;
         margin: 0rem;
-        padding-top: 1.5rem;
-        padding-left: 1.3rem;
+        padding-top: 1%;
+        padding-left: 3%;
         font-size: 1.15rem;
     }
     /*SECTION 'Classiques' : div '#GroupeClassique' regroupant les cartes Hébergements*/
@@ -373,32 +375,34 @@ header h2{
         flex-flow: column wrap;
         justify-content: space-evenly;
         align-content: space-evenly;
-        height: 83%;
+        height: 85%;
         width: 100%;
-        margin: 0rem;
+        margin: 0;
     }
         /*DIV 'GroupeClassique' : div '.CarteH' pour mettre en forme une carte hébergement*/
         .carteH{
             position: relative;
+            box-sizing: border-box;
             display: flex;
             flex-flow: column nowrap;
             justify-content: space-evenly;
             align-items: center;
             width: 30%;
             height: 46%;
-            margin: 0rem;
+            margin: 0.5%;
             border-radius: 0.8rem;
             background-color: #fff;
         }
             .PhotoClassiques{
                 position: relative;
+                box-sizing: border-box;
                 border-top-left-radius: 0.6rem;
                 border-top-right-radius: 0.6rem;
             }
             /*Définition des photos Logements Classiques et rétouches spécifiques*/
             #Photo_01{
                 width: 95%;
-                height: 60%;
+                height: 55%;
                 background : url('../Images/Hebergements/Auberge_La_Cannebière.jpg') no-repeat;
                 background-clip: border-box;
                 background-position: top 45% left 0%;
@@ -406,44 +410,43 @@ header h2{
             }
             #Photo_02{
                 width: 95%;
-                height: 60%;
+                height: 55%;
                 background : url('../Images/Hebergements/Hotel_De_La_Mer.jpg') no-repeat;
                 background-position: top 40% left 0%;
                 background-size: 100%;
             }
             #Photo_03{
                 width: 95%;
-                height: 60%;
+                height: 55%;
                 background : url('../Images/Hebergements/Hotel_Du_Port.jpg') no-repeat;
                 background-position: top 65% left 5%;
                 background-size: 100%;
             }
             #Photo_04{
                 width: 95%;
-                height: 60%;
+                height: 55%;
                 background : url('../Images/Hebergements/Auberge_Le Pannier.jpg') no-repeat;
                 background-position: top 50% left 0%;
                 background-size: 100%;
             }
             #Photo_05{
                 width: 95%;
-                height: 60%;
+                height: 55%;
                 background : url('../Images/Hebergements/Hotel_Les_Mouettes.jpg') no-repeat;
                 background-position: top 50% left 0%;
                 background-size: 100%;
             }
             #Photo_06{
                 width: 95%;
-                height: 60%;
+                height: 55%;
                 background : url('../Images/Hebergements/Hôtel_Chez_Amina.jpg') no-repeat;
                 background-position: top 50% right 30%;
                 background-size: 100%;
             }
-                        
-        
             /*DIV 'CarteH': Nom & Pix Logement*/
             .carteH p{
                 position: relative;
+                box-sizing: border-box;
                 width: 90%;
                 height: 15%;
                 margin: 0rem;
@@ -452,9 +455,10 @@ header h2{
             /*DIV 'CarteH': Notation Logement*/
             .Notation{
                 position: relative;
+                box-sizing: border-box;
                 width: 90%;
-                height: 10%;
-                margin-top: 0.6rem;
+                height: 15%;
+                margin-top: 0.5%;
                 padding-left: 0rem;
             }
             .UneEtoile{
@@ -490,10 +494,11 @@ header h2{
 
     /*SECTION Classiques : Lien "Afficher plus" de logements*/
     #Classiques>a{
-        position: relative;    
-        width: 90%;
-        height: 10%;
+        position: relative;
+        box-sizing: border-box;   
         margin: 0rem;
+        height: 10%;
+        vertical-align: top;
         padding-left: 1.3rem;
         padding-top: 0.8rem;
         font-size: 0.9rem;
@@ -514,28 +519,27 @@ header h2{
 }
     /*SECTION 'Tendances' : Titre de section*/
     #Tendances h2{
+        display: flex;
+        justify-content: space-between;
         position: relative;
-        width: 90%;
-        height: 4%;
         box-sizing: border-box;
+        width: 90%;
+        height: 5%;
         margin-left: 5%;
         margin-bottom: 15%;
         padding-top: 0.8rem;
         font-size: 1.15rem;
     }
-        /*Tendances h2 : Icone du titre*/
-        #Tendances h2 i{
-            margin-left: 4.5rem;
-        }
     /*SECTION 'Tendances' : Mise en forme d'une carte tendance 'carteT'*/
     .carteT{
         position: relative;
+        box-sizing: border-box;
         display: flex;
         flex-flow: column wrap;
         justify-content: flex-start;
         align-items: center;
         width: 90%;
-        height: 25%;
+        height: 28%;
         box-sizing: border-box;
         margin-bottom: 2%;
         background-color: #fff;
@@ -547,7 +551,8 @@ header h2{
         /*Classe générique pour la photo d'un logement (déf. en image de fond)*/
         .PhotoTendances{
             position: relative;
-            width: 36%;
+            box-sizing: border-box;
+            width: 40%;
             height: 100%;
             margin: 0.3rem;
             border-top-left-radius: 0.6rem;
@@ -572,20 +577,20 @@ header h2{
         /*DIV 'carteT': Nom & Pix Logement*/
         .carteT p{
             position: relative;
+            box-sizing: border-box;
             width: 60%;
             height: 40%;
-            box-sizing: border-box;
             padding: 0rem 0.5rem 0rem 0.2rem;
         }
         /*DIV 'CarteH': Notation Logement*/
         .NotationT{
             position: relative;
+            box-sizing: border-box;
             width: 60%;
             height: 15%;
-            box-sizing: border-box;
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
-            margin-left: 0.4rem;
+            margin-top: 0.5%;
+            margin-bottom: 0.5%;
+            margin-left: 0.5%;
         }
         /*Pour les étoiles mise en forme idem aux Logemetns Classiques*/
 
@@ -604,6 +609,7 @@ header h2{
 
 #GroupeActivites{
     position: relative;
+    box-sizing: border-box;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -615,6 +621,7 @@ header h2{
 
     .CarteA{
         position: relative;
+        box-sizing: border-box;
         vertical-align: bottom;
         width: 23%;
         margin: 0rem;
@@ -705,6 +712,7 @@ header h2{
 
 #MenuSecondaire{
     position: relative;
+    box-sizing: border-box;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
@@ -716,6 +724,8 @@ header h2{
 }
     /*Menu de navigation en 3 colonnes*/
     #MenuSecondaire ul{
+        position: relative;
+        box-sizing: border-box;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -791,17 +801,19 @@ header h2{
     }
     #MenuPrincipal ul li{
         box-sizing: border-box;
-        margin-left: 0%;
-        margin-top: 0%;
-        margin-bottom: 0%;
-        text-align: center;
-        border-bottom: solid 3px transparent;
+        list-style-type: none;
+        line-height: 2rem;
+        margin: 1em;
+        border-top: 0;
+        border-bottom: transparent solid 0.1rem;
     }
     #MenuPrincipal ul li:hover{
         box-sizing: border-box;
+        line-height: 2rem;
         border-top: 0;
-        border-bottom: solid 3px #0065fc;
+        border-bottom: #0065fc solid 0.1rem;
     }
+
     /*RECHERCHE*/
 
     #Recherche{
@@ -886,27 +898,15 @@ header h2{
         }
         .Filtre{
             margin: 0.6rem;
-        }
-        .Filtre:nth-child(1){
-            width: auto;
-        }
-        .Filtre:nth-child(2){
-            width: auto;
-        }
-        .Filtre:nth-child(3){
-            width: auto;
-        }
-        .Filtre:nth-child(4){
             width: auto;
         }
     #Hebergements{
         display: flex;
         flex-flow: column nowrap;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: flex-start;
         width:90%;
         height: auto;
-        flex-grow: 2;
         flex-shrink: 3;
         min-width: 360px;
         max-width: 975px;
@@ -917,7 +917,7 @@ header h2{
         flex-flow: column nowrap;
         width: 100%;
         height: auto;
-        margin: auto;
+        margin: 2% auto;
     }
     #Classiques{
         order:2;
@@ -925,15 +925,29 @@ header h2{
         flex-flow: column nowrap;
         width: 100%;
         height: auto;
-        margin: auto;
+        margin: 2% auto;
     }
-    #Classiques h2{
-        margin-bottom: 1rem;
+    #Hebergements h2{
+        margin: 1rem auto;
     }
     .carteT, .carteH{
         width: 75%;
-        height: 12rem;
+        margin: 2%;
+        padding: 0;
+        height: 14rem;
     }
+    #GroupeClassique .PhotoClassiques{
+        height: 70%;
+    }
+    #GroupeClassique p{
+        height: 15;
+    }
+    #GroupeClassique .Notation{
+        height: 15%;
+        background-size: 6.5%;
+        background-position: 0% 0%,7.5% 0%,15% 0%,22.5% 0%,30% 0%;
+    }
+
     #Activites{
         display: flex;
         flex-flow: column nowrap;
@@ -942,7 +956,6 @@ header h2{
         width:90%;
         height: auto;
         margin: 1rem auto;
-        flex-grow: 2;
         flex-shrink: 3;
         min-width: 360px;
         max-width: 975px;
@@ -953,36 +966,11 @@ header h2{
     #GroupeActivites{
         margin: auto;
     }
-    #CarteA1{
+    #CarteA1,#CarteA2,#CarteA3,#CarteA4,#CarteA5,#CarteA6{
         width: 75%;
         height: 12rem;
-        margin: 1% 12.5%;
+        margin: 2% 12.5%;
         padding: auto;
-    }
-    #CarteA2{
-        width: 75%;
-        height: 12rem;
-        margin: 1rem auto;
-    }
-    #CarteA3{
-        width: 75%;
-        height: 12rem;
-        margin: 1rem auto;
-    }
-    #CarteA4{
-        width: 75%;
-        height: 12rem;
-        margin: 1rem auto;
-    }
-    #CarteA5{
-        width: 75%;
-        height: 12rem;
-        margin: 1rem auto;
-    }
-    #CarteA6{
-        width: 75%;
-        height: 12rem;
-        margin: 1rem auto;
     }
     #MenuSecondaire{
         display: flex;
