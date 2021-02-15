@@ -934,18 +934,44 @@ header h2{
         width: 75%;
         margin: 2%;
         padding: 0;
-        height: 14rem;
+        height: 13rem;
     }
     #GroupeClassique .PhotoClassiques{
         height: 70%;
     }
     #GroupeClassique p{
-        height: 15;
+        height: 15%;
     }
     #GroupeClassique .Notation{
         height: 15%;
         background-size: 6.5%;
         background-position: 0% 0%,7.5% 0%,15% 0%,22.5% 0%,30% 0%;
+    }
+    .carteT{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+    }
+    #Tendances .PhotoTendances{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        padding: 0;
+    }
+    .carteT p{
+        position: relative;
+        width: 50%;
+        height: 40%;
+        padding: 2%;
+        word-wrap: break-word;
+    }
+    #Tendances .NotationT{
+        position: relative;
+        width: 45%;
+        height: 40%;
+        padding: 0;
+        background-size: 12%;
+        background-position: 0% 0%,14% 0%,28% 0%,42% 0%,56% 0%;
     }
 
     #Activites{
