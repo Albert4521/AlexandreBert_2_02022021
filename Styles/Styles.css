@@ -124,26 +124,21 @@ footer{
             list-style-type: none;
             line-height: 3rem;
             margin: 1em;
-            border-top: transparent solid 0.1rem;
+            border-top: transparent solid 0.2rem;
+            color: gray;
         }
         #MenuPrincipal ul li:hover{
             box-sizing: border-box;
             line-height: 3rem;
-            border-top: #0065fc solid 0.1rem;
+            color: #0065fc;
+            border-top: #0065fc solid 0.2rem;
         }
             #MenuPrincipal ul li a{
                 width: 100%;
                 height: 100%;
             }
-        #MenuPrincipal ul li:nth-child(1){
-            color: #0065fc;
-        }
-        #MenuPrincipal ul li:nth-child(2){
-            color: gray;
-        }
         #MenuPrincipal ul li:nth-child(3){
             font-weight: bold;
-            color: #0065fc;
         }
 
 /*header : Titre principal*/
@@ -788,7 +783,7 @@ header h2{
         font-size: 1.5rem;
     }
     header h2{
-        font-style: 1.3rem;
+        font-size: 1.3rem;
     }
     #MenuPrincipal{
         position: relative;
@@ -803,6 +798,8 @@ header h2{
         align-content: stretch;
         justify-items: center;
         align-items: flex-start;
+        column-gap: 1rem;
+        row-gap: 0rem;
         width: 100%;
     }
     #MenuPrincipal ul li{
@@ -811,7 +808,6 @@ header h2{
         list-style-type: none;
         line-height: 2rem;
         margin: 1em;
-        padding: auto;
         border-top: 0;
         border-bottom: transparent solid 0.1rem;
     }
@@ -832,6 +828,7 @@ header h2{
         grid-column:3/4;
         grid-row: 1/2;
         align-self: end;
+        margin-top: -8rem;
     }
 
     #MenuPrincipal ul li:hover{
@@ -1023,7 +1020,6 @@ header h2{
         width: 75%;
         height: 12rem;
         margin: 2% 12.5%;
-        padding: auto;
     }
     #MenuSecondaire{
         display: flex;
