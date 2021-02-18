@@ -174,7 +174,7 @@ header h2{
     flex-shrink: 3;
     border : 0;
     margin-left: 0rem;
-    padding-left: 0rem;;
+    padding-left: 0rem;
 }
     /*#Formulaire : Premier champ => Recherche  de la ville*/
 
@@ -956,10 +956,13 @@ header h2{
         margin: 1rem auto;
     }
     .carteT, .carteH{
-        width: 75%;
+        width: 80%;
         margin: 2%;
         padding: 0;
         height: 13rem;
+    }
+    .carteT{
+        padding-right: 1rem;
     }
     #GroupeClassique .PhotoClassiques{
         height: 70%;
@@ -971,6 +974,9 @@ header h2{
         height: 15%;
         background-size: 6.5%;
         background-position: 0% 0%,7.5% 0%,15% 0%,22.5% 0%,30% 0%;
+    }
+    #Classiques>a{
+        margin-bottom: 1rem;
     }
     .carteT{
         display: flex;
@@ -1016,10 +1022,15 @@ header h2{
     #GroupeActivites{
         margin: auto;
     }
-    #CarteA1,#CarteA2,#CarteA3,#CarteA4,#CarteA5,#CarteA6{
+    #CarteA1{
         width: 75%;
         height: 12rem;
-        margin: 2% 12.5%;
+        margin: 3% 12.5% 4% 12.5%;
+    }
+    #CarteA2,#CarteA3,#CarteA4,#CarteA5,#CarteA6{
+        width: 75%;
+        height: 12rem;
+        margin: 3% 12.5%;
     }
     #MenuSecondaire{
         display: flex;
