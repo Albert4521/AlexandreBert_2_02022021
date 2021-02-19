@@ -177,7 +177,6 @@ header h2{
             align-items: center;
             position: relative;
             height: 1.9rem;
-            /*width: auto;*/
             width: 30%;
             border: solid #f2f2f2 1px;
             border-radius: 0.4rem;
@@ -376,6 +375,10 @@ header h2{
             border-radius: 0.8rem;
             background-color: #fff;
         }
+        /*Ombre de bordure au survol d'une carte*/
+        .carteH:hover{
+            box-shadow: 0 0 1rem #0065fc;
+        }
             /*DIV conteneur recevant la photo en image de fond*/
             .PhotoClassiques{
                 position: relative;
@@ -448,33 +451,33 @@ header h2{
             /*Définition des étoiles de notation en image de fond*/
             .UneEtoile{
                 background: url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_grise.svg'),url('../Images/Icones/Etoile_grise.svg'),url('../Images/Icones/Etoile_grise.svg'),url('../Images/Icones/Etoile_grise.svg');
-                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
-                background-position: 0% 0%,9% 0%,18% 0%,27% 0%,36% 0%;
                 background-size: 8%;
+                background-position: 0% 40%,9% 40%,18% 40%,27% 40%,36% 40%;
+                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
             }
             .DeuxEtoiles{
                 background: url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_grise.svg'),url('../Images/Icones/Etoile_grise.svg'),url('../Images/Icones/Etoile_grise.svg');
-                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
-                background-position: 0% 0%,9% 0%,18% 0%,27% 0%,36% 0%;
                 background-size: 8%;
+                background-position: 0% 40%,9% 40%,18% 40%,27% 40%,36% 40%;
+                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
             }
             .TroisEtoiles{
                 background: url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_grise.svg'),url('../Images/Icones/Etoile_grise.svg');
-                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
-                background-position: 0% 0%,9% 0%,18% 0%,27% 0%,36% 0%;
                 background-size: 8%;
+                background-position: 0% 40%,9% 40%,18% 40%,27% 40%,36% 40%;
+                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
             }
             .QuatreEtoiles{
                 background: url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_grise.svg');
-                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
-                background-position: 0% 0%,9% 0%,18% 0%,27% 0%,36% 0%;
                 background-size: 8%;
+                background-position: 0% 40%,9% 40%,18% 40%,27% 40%,36% 40%;
+                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
             }
             .CinqEtoiles{
                 background: url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg'),url('../Images/Icones/Etoile_bleue.svg');
-                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
-                background-position: 0% 0%,9% 0%,18% 0%,27% 0%,36% 0%;
                 background-size: 8%;
+                background-position: 0% 40%,9% 40%,18% 40%,27% 40%,36% 40%;
+                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
             }
     /*SECTION Classiques : Lien "Afficher plus" de logements*/
     #Classiques>a{
@@ -530,6 +533,10 @@ header h2{
         background-color: #fff;
         border-radius: 0.8rem;
         font-size: 0.9rem;
+    }
+    /*Ombre de bordure au survol d'une carte*/
+    .carteT:hover{
+        box-shadow: 0 0 1rem #0065fc;
     }
         /*Classe générique pour la photo d'un logement (déf. en image de fond)*/
         .PhotoTendances{
@@ -609,6 +616,10 @@ header h2{
         margin: 0rem;
         border-radius: 0.8rem;
         box-shadow: #999 0rem 0rem 0.5rem;
+    }
+    /*Ombre de bordure au survol d'une carte*/
+    .CarteA:hover{
+        box-shadow: 0 0 1rem #0065fc;
     }
     /*DIV 'CartesActivites' : Dimensions spécifiques des cartes Activité*/
     #CarteA1{
